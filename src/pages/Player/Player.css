@@ -1,0 +1,42 @@
+.player {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.player iframe {
+    border-radius: 10px;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.player p span {
+    font-weight: 500;
+    color: yellow;
+}
+@media (max-width: 800px) {
+    .player-info {
+        width: 95%;
+        font-size: 14px;
+    }
+    .player iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+}
